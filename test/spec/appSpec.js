@@ -46,6 +46,7 @@ describe('Siskel', function() {
     });
 
     it('should update its comparator', function() {
+
       collection.sortByField('rating');
       expect(collection.comparator).to.equal('rating');
     });
@@ -103,6 +104,8 @@ describe('Siskel', function() {
     });
 
     it('should re-render when the collection sorts', function() {
+
+
       collection.sort();
       expect(collectionView.render).to.have.been.called;
     });
